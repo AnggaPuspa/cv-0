@@ -1,0 +1,304 @@
+.resume {
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ECECEC;
+}
+.container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+}
+.left_content {
+    width: 45%;
+    height: 100%;
+    position: relative;
+}
+.education_box {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    left: 5em;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 8em;
+}
+.right_content {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-left: 4em;
+    padding-bottom: 8em;
+    position: relative;
+    
+}
+.title_box {
+    width: 550px;
+    height:310px;
+    position: absolute;
+    top: 5em;
+    left: 0;
+    transform: translateX(-16em) translateY(0em);
+    z-index: 2;
+    display: flex;
+}
+.left {
+    width: 45%;
+    height: 100%;
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-top: 1.4em;
+    color: #202020;
+}
+.splash {
+    width: 100px;
+    height: 20px;
+    transform: translateY(.8em);
+    background-image: url("../public/Assets/splash 1.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.95;
+    background-size: cover;
+}
+.center {
+    width: 10%;
+    height: 100%;
+    background-image: url("../public/Assets/garis.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.right {
+    width: 45%;
+    height: 100%;
+    /* background-color: green; */
+    font-size: 30px;
+    font-weight: 600;
+    color: #202020;
+    display: flex;
+    /* justify-content: flex-end; */
+    align-items: flex-end;
+    padding-bottom: 1.7em;
+    position: relative;
+}
+.ornamen {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    background-image: url("../public/Assets/Vector.svg");
+    background-position: center;
+    background-size: 45px 45px;
+    background-repeat: no-repeat;
+    transform: translateX(3.3em) translateY(-.5em);
+}
+.box {
+    width: 470px;
+    height: 270px;
+    background-color: #d9d9d9;
+    box-shadow: 39px 31px 0px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 39px 31px 0px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 39px 31px 0px 0px rgba(0,0,0,0.75);
+}
+.text_content {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    padding: 1em 1em;
+}
+.col {
+    width: 50%;
+    height: 100%;
+    text-align: left;
+}
+.details_2 {
+    width: 100%;
+    height: 50%;
+    position: relative;
+    display: flex;
+    font-size: 30px;
+    font-weight: 600;
+}
+.details_2 p:nth-child(2) {
+    font-size: 17px;
+    font-weight: 500;
+    position: absolute;
+    top: .6em;
+    left: 2em;
+}
+.achievement {
+    width: 100%;
+    height: 40%;
+    position: relative;
+}
+.title {
+    width: 230px;
+    height: 50px;
+    border-top: 5px solid #202020;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateY(-0.5em);
+    padding-top: 0.2em;
+    padding-left: 1em;
+    text-align: left;
+    font-size: 24px;
+    font-weight: 600;
+}
+.desc {
+    width: auto;
+    height: auto;
+    position: absolute;
+    bottom: 1.4em;
+    left: 2em;
+    font-weight: 600;
+    font-size: 15px;
+}
+.desc p:nth-child(2) {
+    font-size: 12px;
+    font-weight: 500;
+    opacity: 0.7;
+}
+.resume_ornamen {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 200px;
+    background-image: url("../public/Assets/Frame3.svg");
+    background-size: cover;
+}
+.title_2 {
+    display: none;
+}
+.kotak {
+    width: 350px;
+    height: 110px;
+    background-color: #d9d9d9;
+    z-index: 1;
+    box-shadow: 39px 31px 0px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 39px 31px 0px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 39px 31px 0px 0px rgba(0,0,0,0.75);
+    padding: 0.5em 1em;
+}
+.year {
+    width: 100%;
+    height: 35%;
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+    color: #202020;
+    align-items: center;
+}
+.details {
+    width: 100%;
+    height: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.marker {
+    width: 18px;
+    height: 50px;
+    border-radius: 60px;
+    background-color: black;
+    border: 4px solid black;
+    opacity: 0.7;
+}
+.description {
+    width: 100%;
+    padding-left: 0.7em;
+    gap: 0.5em;
+    font-size: 20px;
+    text-align: left;
+    font-weight: 500;
+}
+.description p:nth-child(2) {
+    font-size: 12px;
+    font-weight: normal;
+    opacity: 0.7;
+}
+@media (max-width:1370px) {
+    .title_box {
+        top: 2em;
+        left: 1em;
+    }
+    .education_box {
+        left: 0em;
+    }
+}
+@media (max-width:1100px) {
+    .resume {
+        height: 100%;
+    }
+    .education_box {
+        position: relative;
+        bottom: 0;
+    }
+    .left_content {
+        padding-top: 5em;
+        width: 100%;
+        padding-bottom: 5em;
+    }
+    .right_content {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0em;
+    }
+    .container {
+        padding-top: 2em;
+        flex-direction: column;
+    }
+    .resume_ornamen {
+        display: none;
+    }
+    .title_box {
+        display: none;
+    }
+    .title_2 {
+        display: block;
+        font-size: 30px;
+        font-weight: 600;
+        z-index: 3;
+        text-align: center;
+    }
+    .ornamen {
+        margin: auto;
+        position: absolute;
+    }
+}
+@media (max-width:550px) {
+    .box {
+        box-shadow: none;
+    }
+    .kotak {
+        box-shadow: none;
+    }
+    .year {
+        font-size: 20px;
+    }
+    .details_2 {
+        font-size: 20px;
+    }
+    .details_2 p:nth-child(2) {
+        font-size: 15px;
+    }
+}
+@media (max-width:400px) {
+    .title {
+        font-size: 20px;
+    }
+    .desc {
+        font-size: 12px;
+    }
+}

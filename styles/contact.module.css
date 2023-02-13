@@ -1,0 +1,178 @@
+.contact {
+    width: 100%;
+    height: 50vh;
+    background-color: #202020;
+    padding-top: 2em;
+    position: relative;
+}
+.top {
+    width: 100%;
+    height: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title_box {
+    width: 300px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    transform: translateX(4.5em);
+}
+.title {
+    width: fit-content;
+    font-weight: 600;
+    padding: 0.05em 0.5em;
+    color: black;
+    background-color: #FFF400;
+    font-size: 20px;
+}
+.title_box p:nth-child(2) {
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    opacity: 1;
+}
+.center {
+    width: 100%;
+    height: 33%;
+    display: flex;
+    justify-content: center;
+    gap: 8em;
+}
+.kotak {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon {
+    width: 50px;
+    height: 50px;
+    background-image: url("../public/Assets/mail.png");
+    background-position: center;
+    background-size: 30px 40px;
+    background-repeat: no-repeat;
+}
+.kotak:nth-child(2) .icon {
+    background-image: url("../public/Assets/call.png");
+    background-size: 25px 25px;
+}
+.kotak:nth-child(3) .icon {
+    background-image: url("../public/Assets/placeholder.png");
+    background-size: 25px 25px;
+}
+.kotak p {
+    padding-left: .7em;
+    color: white;
+}
+.bott {
+    width: 100%;
+    height: 33%;
+}
+.medsos_box {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(1em);
+}
+.medsos {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-image: url("../public/Assets/facebook (5).png");
+    background-position: center;
+    background-size: 45px 45px;
+    background-repeat: no-repeat;
+}
+.medsos:nth-child(2) {
+    background-image: url("../public/Assets/instagram (8).png");
+}
+.medsos:nth-child(3) {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #fff;
+    background-image: url("../public/Assets/twitter (3).png");
+    background-size: 20px 20px;
+    background-position: center;
+}
+.a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kotak .a p:hover {
+    text-decoration: underline !important;
+}
+.wm {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 0.5em 0.5em;
+    font-size: 14px;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon_2 {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-image: url("../public/assets/copyright-symbol.png");
+    background-size: 15px;
+    background-position: center;
+    margin: 0em 0.3em;
+}
+.links:hover {
+    text-decoration: underline;
+}
+
+@media (max-width:1100px) {
+    .center {
+        gap: 1em;
+        transition: .4s ease;
+    }
+}
+@media (max-width:840px) {
+    .contact {
+        height: 90vh;
+    }
+    .center {
+        flex-direction: column;
+        align-items: center;
+    }
+    .center .kotak:nth-child(2) {
+        transform: translateX(-2.2em);
+    }
+    .center .kotak:nth-child(3) {
+        transform: translateX(-.7em);
+    }
+    .bott {
+        display: flex;
+        justify-content: center;
+    }
+    .medsos_box {
+        transform: translateY(0em);
+    }
+}
+@media (max-width:330px) {
+    .contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .wm {
+        font-size: 10px;
+    }
+}

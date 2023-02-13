@@ -1,0 +1,265 @@
+.project {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 8em;
+}
+.container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 7em;
+    padding-top: 2em;
+    position: relative;
+}
+.title {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: 600;
+}
+.splash {
+    width: 100px;
+    height: 100px;
+    transform: translateY(1.7em);
+    background-image: url("../public/Assets/splash 1.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.95;
+    background-size: 100px;
+}
+.content {
+    width: 80%;
+    height: 100%;
+    display: flex;
+}
+.ornamen {
+    position: absolute;
+    z-index: 1;
+    top: 4em;
+    left: -5em;
+    width: 300px;
+    height: 200px;
+    background-image: url("../public/Assets/Frame3.svg");
+    background-size: cover;
+    transform: rotate(90deg);
+}
+.box:hover {
+    width: 350px;
+    height: 250px;
+    background-color: #d9d9d9;
+    background-image: none;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+}
+.box:hover .content_box {
+    opacity: 1;
+    transform: translateY(0);
+}
+.content_box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: .5s ease;
+    transform: translateY(-1em);
+    padding-left: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.5em;
+    background: #C9D6FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    .content_box p {
+        width: 270px;
+        text-align: justify;
+        font-size: 14px;
+    }
+.content_box p:first-child {
+    font-size: 20px;
+    font-weight: 600;
+}
+.content_box p:last-child {
+    font-size: 14px !important;
+    color: white;
+    opacity: 0.7;
+    font-weight: 400 !important;
+}
+.img {
+    width: 300px;
+    height: 250px;
+    background-image:  url("../public/Assets/mockup1.png");
+    background-color: #d9d9d9;
+    background-size: 300px 250px;
+    background-position: center;
+    transition: .4s ease;
+}
+.row:first-child .box:last-child .img{
+    background-image:  url("../public/Assets/mockup2.png");
+}
+.row:last-child .box:first-child .img{
+    background-image:  url("../public/Assets/mockup3.png");
+}
+.row:last-child .box:last-child .img{
+    background-image:  url("../public/Assets/mockup4.png");
+}
+.row {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 4em;
+}
+.row:first-child {
+    padding-right: 3em;
+}
+.row:last-child {
+    align-items: flex-start;
+    padding-left: 3em;
+}
+.row:last-child .box {
+    transform: translateY(-2em);
+    box-shadow: 39px 31px 0px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 39px 31px 0px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 39px 31px 0px 0px rgba(0,0,0,0.75);
+}
+.row:last-child .box:hover{
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+}
+.row:last-child .box:hover .img {
+    transform: translateX(1em) translateY(1em);
+}
+.box:hover .img {
+    opacity: 0;
+    transform: translateX(-1em) translateY(1em);
+}
+.box {
+    width: 300px;
+    height: 250px;
+    background-color: #fff;
+    box-shadow: -39px 31px 0px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -39px 31px 0px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -39px 31px 0px 0px rgba(0,0,0,0.75);
+    position: relative;
+    transition: .4s ease;
+    z-index: 2;
+}
+.cta {
+    margin-top: .5em;
+    position: relative;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #E53170;
+    opacity: 0.5;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+   }
+   .cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #234567;
+   } 
+   .cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+   }
+   .cta:hover:before {
+    width: 100%;
+    background: #E53170;
+    opacity: 0.3;
+   }
+   .cta:hover svg {
+    transform: translateX(0);
+   }
+   .cta:active {
+    transform: scale(0.95);
+   }
+
+
+@media (max-width:1050px) {
+    .ornamen {
+        display: none;
+    }
+}   
+@media (max-width:930px) {
+    .content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5em;
+    }
+    .row {
+        align-items: center;
+    }
+    .row:first-child {
+        padding-right: 0;
+    }
+    .row:last-child {
+        align-items: center;
+        padding-left: 0;
+    }        
+    .row:last-child .box {
+        transform: translateY(0em);
+        box-shadow: -39px 31px 0px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: -39px 31px 0px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: -39px 31px 0px 0px rgba(0,0,0,0.75);
+    
+    }    
+    .container {
+        padding-right: 0em;
+        justify-content: center;
+    }
+}
+@media (max-width:425px) {
+    .box {
+        box-shadow: none !important;
+        transition: 0.1 ease;
+    }
+    .row:last-child .box:hover .img {
+        transform: translateY(0.5em);
+    }
+    .box:hover .img {
+        opacity: 0;
+        transform: none;
+        transform: translateY(0.5em);
+    }    
+}
